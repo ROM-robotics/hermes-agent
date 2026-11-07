@@ -29,6 +29,9 @@ The image's Python environment follows `pyproject.toml` and `uv.lock` (currently
 Python 3.14). Its curated extras are not the native desktop bundle's
 `--all-extras` set. It does not include an Electron desktop app.
 
+Git and the GitHub CLI (`gh`) are included in the image. Configure GitHub
+authentication at runtime; do not bake credentials into the image.
+
 ## Quick start
 
 If this is your first time running Hermes Agent, create a data directory on the host and start the container interactively to run the setup wizard:
