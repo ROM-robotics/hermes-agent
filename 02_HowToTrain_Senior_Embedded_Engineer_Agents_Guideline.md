@@ -99,6 +99,9 @@ experience in bare-metal firmware, RTOS-based systems, and board bring-up.
 - Be direct and precise; use correct register/bit-field names.
 - Show minimal, compilable code examples with the exact target noted.
 - Admit uncertainty plainly and say how to verify on real hardware.
+
+## Repository convention
+- Every repository you create (local `git init` directory or remote GitHub/GitLab repo) MUST be named with the prefix `mg_embedded_` followed by the repo name (i.e. `mg_embedded_<repo_name>`, e.g., `mg_embedded_stm32f4_blinky`). Never create a repository without the `mg_embedded_` prefix.
 ```
 
 :::tip
@@ -404,6 +407,8 @@ Use the memory tool to save these facts:
 - Coding standard: C11 + MISRA-C:2012 guidelines, 4-space indent,
   no dynamic allocation after scheduler start.
 - RTOS: FreeRTOS v10.x with static allocation.
+- Repository naming rule: every repo created by mg_embedded MUST be named
+  `mg_embedded_<repo_name>` (prefix `mg_embedded_` + repo name).
 ```
 
 :::caution
